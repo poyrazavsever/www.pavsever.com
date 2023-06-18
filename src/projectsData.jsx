@@ -1,0 +1,51 @@
+export const data = [
+    {
+        link:"https://www.niafix.com",
+        github:"",
+        header:"Niafix Website  Design",
+        language:"Figma",
+        exp:"I designed the website for a group called Niafix. This website showcases the group's projects and goals.",
+        date:"15/03/2023",   
+    },
+    {
+        link:"https://react-tailwind-restaurant-web-site.vercel.app/",
+        github:"https://github.com/poyrazavsever/React-Tailwind-Restaurant-WebSite",
+        header:"Restaurant Website",
+        language:"React",
+        exp:"A website for an imaginary restaurant. It includes sections such as menu, gallery, and services.",
+        date:"20/09/2022",   
+    },
+    {
+        link:"company-website-ruddy.vercel.app",
+        github:"https://github.com/poyrazavsever/company-website",
+        header: "Company Website",
+        language:"React",
+        exp:"Landing page for an imaginary company. It contains pages such as purchase pages, customer reviews, team introductions, and more.",
+        date:"21/04/2023",   
+    },
+    {
+        link:"https://github.com/poyrazavsever/Python-Login_Registration",
+        github:"",
+        header:"Login & Registration System",
+        language:"Python",
+        exp:"Login and registration system. One of the things I have tried to gain new skills for myself.",
+        date:"11/08/2022",   
+    },
+    {
+        link:"https://www.figma.com/file/S8AYMcm2Mr1NVORvY8P6sx/E-ticaret-Web-Site?type=design&node-id=0%3A1&t=XFldllY1tuJZtd8v-1",
+        github:"",
+        header:"Boutique Clothing Website",
+        language:"Figma",
+        exp:"I designed an e-commerce website for an imaginary boutique clothing store.",
+        date:"2/01/2023",   
+    },
+
+    {
+        link:"https://github.com/poyrazavsever/Python-Flask-Blog_Project",
+        github:"",
+        header:"Blog Website",
+        language:"Python",
+        exp:"Blog Website with Flask. However, it turned out a bit amateurish.",
+        date:"27/02/2022",   
+    },
+]
