@@ -2,7 +2,6 @@ import React from 'react'
 import ReactIcon from './Icon.js'
 import { NavLink } from 'react-router-dom'
 import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
 
 function ProjectCard({ id, title, type, date, content }) {
     return (
@@ -22,7 +21,7 @@ function ProjectCard({ id, title, type, date, content }) {
                         </div>
 
                         <p className='text-sm md:text-base text-neutral-500 line-clamp-2'>
-                            <ReactMarkdown children={content} remarkPlugins={[remarkGfm]}/>
+                            <ReactMarkdown children={content}/>
                         </p>
                     </div>
 
