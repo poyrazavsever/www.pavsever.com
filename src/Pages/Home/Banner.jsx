@@ -47,7 +47,7 @@ function Banner() {
 
             </div>
 
-            <img src={process.env.PUBLIC_URL + "/Images/Other/bannerpp.jpg"} alt="bannerPP" className='w-56 h-56 rounded-full object-cover object-top grayscale hover:grayscale-0 transition-all mobile:hidden' />
+            <img src={process.env.PUBLIC_URL + "/Images/Other/bannerpp.jpg"} alt="bannerPP" className='w-56 h-56 rounded-full object-cover object-top grayscale hover:grayscale-0 transition-all mobile:hidden duration-500' />
 
             <div className='absolute group mr-28 -z-20'>
 

@@ -17,7 +17,7 @@ function Navbar() {
     <div className='pt-12'>
       <div className='mobile:flex justify-center items-center'>
 
-        <div className='h-15 md:w-[480px] mobile:px-4 py-2 border border-neutral-800 rounded-full'>
+        <div className='h-15 md:w-[400px] pl-1 mobile:px-4 py-2 border border-neutral-800 rounded-full'>
 
           <div className='flex items-center justify-around gap-4'>
 
@@ -35,13 +35,6 @@ function Navbar() {
                   "hover:text-neutral-400 transition-all": !isActive,
                   "text-neutral-300 cursor-default": isActive,
                 })}> Home </NavLink>
-
-              <NavLink to="/about"
-                end
-                className={({ isActive }) => classNames({
-                  "hover:text-neutral-400 transition-all": !isActive,
-                  "text-neutral-300 cursor-default": isActive,
-                })}> About </NavLink>
 
               <NavLink to="/blog"
                 end

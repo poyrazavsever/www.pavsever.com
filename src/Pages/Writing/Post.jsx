@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, Navigate } from "react-router-dom"
 import postlist from "../../posts.json"
 import ReactMarkdown from 'react-markdown'
-import gfm from 'remark-gfm'
+import rehypeRaw from 'rehype-raw'
 
 
 function Post() {
@@ -25,7 +25,7 @@ function Post() {
   }
 
   return (
-    <div className='mt-24 animate-card overflow-hidden'>
+    <div className='my-24 animate-card overflow-hidden'>
 
       <div className='mx-auto md:container mobile:ml-12'>
 
@@ -35,7 +35,7 @@ function Post() {
         </div>
 
         <p className='text-sm md:text-base mt-8 mobile:pr-24'>
-          <ReactMarkdown children={fetchedPost.content} plugins={[gfm]} escapeHtml={false} className='prose lg:prose-xl'/>
+          <ReactMarkdown children={fetchedPost.content} rehypePlugins={[rehypeRaw]} skipHtml={false} className='prose lg:prose-xl'/>
         </p>
 
       </div>
