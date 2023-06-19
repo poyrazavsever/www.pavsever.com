@@ -9,7 +9,7 @@ function Skills() {
         <h3 className='text-lg md:text-xl text-neutral-400 mb-3'>- Technologies I use</h3>
       </div>
 
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-y-4 pt-6 mr-5'>
+      <div className='grid grid-cols-2 md:grid-cols-4 gap-y-4 mobile:gap-x-12 pt-6'>
         {data?.length &&
           data.map((skill) => {
             return (

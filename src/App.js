@@ -15,25 +15,25 @@ function App() {
   
   
 
-  // let options = {
-  //   color: '#a3a3a3',
-  //   outerAlpha: 0.25,
-  //   size: { 
-  //     inner: 8, 
-  //     outer: 38 
-  //   },
-  //   hoverScale: {
-  //     inner: 0.5,
-  //     outer: 1.4
-  //   },
-  //   clickScale: {
-  //     inner: 1.4,
-  //     outer: 0.1
-  //   }
-  // }
+  let options = {
+    color: '#a3a3a3',
+    outerAlpha: 0.25,
+    size: { 
+      inner: 8, 
+      outer: 38 
+    },
+    hoverScale: {
+      inner: 0.5,
+      outer: 1.4
+    },
+    clickScale: {
+      inner: 1.4,
+      outer: 0.1
+    }
+  }
 
-  // const cursor = AnimatedCursor(options)
-  // cursor.init()
+  const cursor = AnimatedCursor(options)
+  cursor.init()
 
   return (
     <div className="overflow-x-hidden">
@@ -45,7 +45,7 @@ function App() {
 
       <PreLoader />
 
-      <div className="md:container mx-auto -z-40">
+      <div className="md:container md:mx-auto -z-40">
         <Navbar/>
         
 

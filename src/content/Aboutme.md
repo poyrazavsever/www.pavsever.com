@@ -1,6 +1,6 @@
 ---
-title: What am I, what am I not?
-type: Hakkımda
+title: About Me.
+type: About
 date: June 18, 2023
 ---
 

@@ -4,7 +4,7 @@ import classNames from 'classnames'
 
 function ProjectCard({ header, exp, date, link, github, language, }) {
     return (
-        <a href={link} rel="noreferrer" target='_blank' className='group cursor-pointer w-80 md:w-96 border border-neutral-800 bg-neutral-950 rounded-lg animate-card'>
+        <a href={link} rel="noreferrer" target='_blank' className='group cursor-pointer sm:w-80 md:w-96 border border-neutral-800 bg-neutral-950 rounded-lg animate-card'>
 
             <div className='py-3 px-4 flex flex-col justify-center gap-4'>
 

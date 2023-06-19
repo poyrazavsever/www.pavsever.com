@@ -22,7 +22,7 @@ function Home() {
           <Banner />
 
 
-          <div className='mt-24 md:mt-48 mobile:pl-10 pb-16 flex flex-col gap-48'>
+          <div className='mt-24 md:mt-48 mobile:px-8 pb-16 flex flex-col gap-48'>
 
             <Skills />
 
