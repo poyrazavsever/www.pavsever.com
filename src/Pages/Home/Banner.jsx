@@ -7,17 +7,17 @@ function Banner() {
 
     return (
 
-        <div className='flex justify-center desktop:justify-between items-center'>
+        <div className='flex desktop:justify-between items-center mobile:pl-10 mobile:pr-3'>
 
             <div>
                 <h2 className='text-lg md:text-xl font-medium text-neutral-300'>Poyraz Avsever</h2>
                 <p className='text-neutral-500 pt-2 text-sm md:text-base'>Developer & Designer</p>
 
-                <div className='flex flex-col items-start text-sm md:text-base text-neutral-500 gap-4 w-96 md:w-[450px] pt-3'>
-                    <p>I am Poyraz, I'm 17 years old. I have been interested in UI/UX design and frontend development for 1.5 years.</p>
-                    <p>I use React and Tailwind in frontend development.</p>
-                    <p>If you'd like to talk to me about something;</p>
-                </div>
+                <p className='flex flex-col items-start text-sm md:text-base text-neutral-500 gap-4 md:w-[450px] pt-3'>
+                    I am Poyraz, I'm 17 years old. I have been interested in UI/UX design and frontend development for 1.5 years
+                    I use React and Tailwind in frontend development
+                    If you'd like to talk to me about something
+                </p>
 
                 <button className='flex items-center gap-1 text-neutral-400 text-base md:text-lg hover:gap-2 transition-all pt-4'>
                     <a href='mailto:poyrazavsever@gmail.com'>Get in touch</a>
@@ -51,7 +51,7 @@ function Banner() {
 
             <div className='absolute group mr-28 -z-20'>
 
-                <div className='opacity-50 mobile:opacity-30'>
+                <div className='opacity-80 mobile:opacity-50'>
                     <div className='w-14 h-14 bg-amber-400 blur-3xl absolute top-5 -right-16 -z-20'>
                     </div>
                     <div className='w-12 h-12 bg-emerald-400 blur-3xl absolute -top-9 -left-12 -z-20'></div>

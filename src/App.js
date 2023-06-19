@@ -36,7 +36,7 @@ function App() {
   // cursor.init()
 
   return (
-    <div>
+    <div className="overflow-x-hidden">
       
       <div id="cursor" className="!z-50">
         <div id="cursor-outer"></div>

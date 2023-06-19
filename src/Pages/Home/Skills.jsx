@@ -9,7 +9,7 @@ function Skills() {
         <h3 className='text-lg md:text-xl text-neutral-400 mb-3'>- Technologies I use</h3>
       </div>
 
-      <div className='grid grid-cols-2 md:grid-cols-4 gap-y-4 pt-6'>
+      <div className='grid grid-cols-2 md:grid-cols-4 gap-y-4 pt-6 mr-5'>
         {data?.length &&
           data.map((skill) => {
             return (
@@ -21,7 +21,7 @@ function Skills() {
 
       <div className='absolute group mr-28 right-32 top-24 -z-30'>
 
-        <div className='opacity-40 mobile:opacity-20'>
+        <div className='opacity-70 mobile:opacity-50'>
           <div className='w-14 h-14 bg-amber-400 blur-3xl absolute top-5 -right-16 -z-20'>
           </div>
           <div className='w-12 h-12 bg-emerald-400 blur-3xl absolute -top-9 -left-12 -z-20'></div>

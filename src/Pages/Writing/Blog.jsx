@@ -22,13 +22,13 @@ function Blog() {
 
             <div>
               <h3 className='text-xl md:text-2xl text-neutral-300'>My Posts</h3>
-              <p className='text-sm md:text-base text-neutral-500 w-80 md:w-96 mt-2'>These are the writings that include my adventures, experiences, and my comments on current affairs.</p>
+              <p className='text-sm md:text-base text-neutral-500 md:w-96 mt-2'>These are the writings that include my adventures, experiences, and my comments on current affairs.</p>
             </div>
 
           </div>
 
 
-          <div className='absolute opacity-20 mobile:opacity-30 group mx-32 top-32 right-24 -z-50'>
+          <div className='absolute opacity-80 mobile:opacity-50 group mx-32 top-32 right-24 -z-50'>
 
             <div className='w-14 h-14 bg-amber-400 blur-3xl absolute top-5 -right-16 -z-20'>
             </div>
@@ -56,7 +56,7 @@ function Blog() {
 
           </div>
 
-          <div className='absolute opacity-20 mobile:opacity-30 group mx-32 top-64 left-64 -z-50'>
+          <div className='absolute opacity-80 mobile:opacity-50 group mx-32 top-64 left-64 -z-50'>
 
             <div className='w-14 h-14 bg-amber-400 blur-3xl absolute top-5 -right-16 -z-20'>
             </div>
@@ -87,7 +87,7 @@ function Blog() {
 
         </div>
 
-        <div className='mobile:ml-14'>
+        <div className='mobile:pl-10'>
           <WritingCards />
         </div>
 

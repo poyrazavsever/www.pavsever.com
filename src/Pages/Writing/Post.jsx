@@ -34,7 +34,7 @@ function Post() {
           <span className='text-xs md:text-sm w-full text-neutral-500'>{fetchedPost.date}</span>
         </div>
 
-        <p className='text-sm md:text-base mt-8 mobile:pr-24'>
+        <p className='text-xs md:text-base mt-8 mobile:pr-24'>
           <ReactMarkdown children={fetchedPost.content} rehypePlugins={[rehypeRaw]} skipHtml={false} className='prose lg:prose-xl'/>
         </p>
 
