@@ -1,7 +1,7 @@
 {
     "name": "realportfolio",
     "short_name": "rp",
-    "theme_color": "#2196f3",
+    "theme_color": "#000000",
     "background_color": "#0a0a0a",
     "display": "browser",
     "scope": "/",
