@@ -11,4 +11,8 @@
         background-color: #0a0a0a;
         overflow-x: hidden;
     }
+    ::selection {
+        background: #a3a3a3;
+        color:#1c1917 ;
+    }
   }
