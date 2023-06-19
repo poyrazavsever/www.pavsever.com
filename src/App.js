@@ -19,7 +19,7 @@ function App() {
       
       <PreLoader />
 
-      <div className="container mx-auto -z-40">
+      <div className="md:container mx-auto -z-40">
         <Navbar/>
         
 
