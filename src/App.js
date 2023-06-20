@@ -41,7 +41,7 @@ function App() {
       />
       </div>
 
-      <div className="overflow-x-hidden">
+      <div>
 
       <PreLoader />
 

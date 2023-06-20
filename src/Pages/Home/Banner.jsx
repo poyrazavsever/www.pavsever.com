@@ -19,7 +19,7 @@ function Banner() {
 
                 <button className='flex items-center gap-1 text-neutral-400 text-base md:text-lg hover:gap-2 transition-all pt-4'>
                     <a href='mailto:poyrazavsever@gmail.com'>Get in touch</a>
-                    <span><ReactIcon iconName={"FiArrowUpRight"} iconType={"fi"} classname="text-neutral-400" /></span>
+                    <span><ReactIcon iconName={"FiArrowUpRight"} iconType={"fi"} iconColor="text-neutral-400" /></span>
                 </button>
 
                 <div className='flex items-center gap-4 md:pr-4 pt-4'>

@@ -16,8 +16,8 @@ function ProjectCard({ id, title, type, date, content }) {
                     <div className='flex flex-col items-start gap-2'>
                         <div className='flex items-center gap-2 group-hover:gap-3 transition-all duration-300 text-neutral-400 '>
 
-                            <h4 className='md:text-xl font-medium text-neutral-400 line-clamp-1 tracking-wide'>{title}</h4>
-                            <ReactIcon iconName={"FiArrowUpRight"} iconType={"fi"} classname="text-lg"/>
+                            <h4 className='md:text-xl font-medium text-neutral-300 line-clamp-1 tracking-wide'>{title}</h4>
+                            <ReactIcon iconName={"FiArrowUpRight"} iconType={"fi"} classname="text-lg" iconColor="text-neutral-300"/>
 
 
                         </div>
