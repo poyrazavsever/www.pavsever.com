@@ -37,9 +37,7 @@ product effortlessly and satisfactorily.
 </p>
 
 <p style="color:#a3a3a3;">
-UI and UX are closely connected and should be considered together. A good UI helps users effectively use a product, while a good UX ensures users have a pleasant experience when using the product. To design a user-friendly interface, it is important to understand user needs, conduct usability testing, and be open to feedback.
-
-In conclusion, UI and UX are important concepts that aim to improve the interactions between users and digital products. A successful UI/UX design aims to provide users with a visually appealing, user-friendly, and satisfying experience.
+UI and UX are closely connected and should be considered together. A good UI helps users effectively use a product, while a good UX ensures users have a pleasant experience when using the product. To design a user-friendly interface, it is important to understand user needs, conduct usability testing, and be open to feedback. In conclusion, UI and UX are important concepts that aim to improve the interactions between users and digital products. A successful UI/UX design aims to provide users with a visually appealing, user-friendly, and satisfying experience.
 </p>
 
 
