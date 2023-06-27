@@ -1,7 +1,7 @@
 ---
 title: What is UI/UX?.
 type: Design
-date: June 18, 2023
+date: June 27, 2023
 ---
 
 <h3 style="color:#e5e5e5;">What is UI/UX?</h3>
