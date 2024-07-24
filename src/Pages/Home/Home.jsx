@@ -13,7 +13,7 @@ function Home() {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Poyraz Avsever | Home Page | My Skills | My Projects</title>
+        <title>Poyraz Avsever | Portfolio | Blog</title>
       </Helmet>
 
       <div className='mt-24 animate-card'>
