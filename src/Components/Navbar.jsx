@@ -35,7 +35,7 @@ function Navbar() {
                   "hover:text-neutral-400 transition-all": !isActive,
                   "text-neutral-300 cursor-default": isActive,
                 })}> Home </NavLink>
-
+                
               <NavLink to="/blog"
                 end
                 className={({ isActive }) => classNames({
