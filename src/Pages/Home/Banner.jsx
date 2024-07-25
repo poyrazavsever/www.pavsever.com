@@ -11,6 +11,7 @@ function Banner() {
     const [designs, setDesigns] = useState("")
     const [useTech, setUseTech] = useState("")
     const [bio, setBio] = useState("")
+    const [image, setImage] = useState("")
 
 
     function getProfile() {
@@ -22,6 +23,7 @@ function Banner() {
             setBio(data.bio)
             setDesigns(data.location)
             setUseTech(skillData.length)
+            setImage(data.avatar_url)
         }, (err) => {
             console.log(err)
         })
@@ -72,7 +74,7 @@ function Banner() {
                 </div>
 
                 <div>
-                    <img src={process.env.PUBLIC_URL + "/Images/Other/bannerpp.jpg"} alt="bannerPP" className='w-56 h-56 rounded-full object-cover object-top grayscale hover:grayscale-0 transition-all mobile:hidden duration-500' />
+                    <img src={process.env.PUBLIC_URL + image} alt="bannerPP" className='w-56 h-56 rounded-full object-cover object-top grayscale hover:grayscale-0 transition-all mobile:hidden duration-500' />
                 </div>
 
             </div>
