@@ -1,5 +1,37 @@
 export const data = [
     {
+        link:"https://weather-aktwtl9lh-poyrazavsever.vercel.app/",
+        github:"https://github.com/poyrazavsever/form_components",
+        header:"Form Components",
+        language:"React",
+        exp:"Login, Register, Contact Page with React & Tailwind.",
+        date:"19/05/2023",   
+    },
+     {
+        link:"https://weather-aktwtl9lh-poyrazavsever.vercel.app/",
+        github:"https://github.com/poyrazavsever/Weather-App",
+        header:"Weather App",
+        language:"React",
+        exp:"An application that shows the weather forecast in Turkey",
+        date:"19/04/2023",   
+    },
+    {
+        link:"https://tailwind-portfolio-phi.vercel.app/",
+        github:"https://github.com/poyrazavsever/Basic-Portfolio",
+        header:"Basic Portfolio",
+        language:"React",
+        exp:"Basic Portolio",
+        date:"18/03/2023",   
+    },
+    {
+        link:"https://react-firebase-instagram-web-clone-21u9.vercel.app/",
+        github:"https://github.com/poyrazavsever/Instagram-Web-Clone",
+        header:"Instagram Web Clone",
+        language:"React",
+        exp:"Instagram website clone. I did it to develop in the Firebase field.",
+        date:"24/02/2023",   
+    },
+    {
         link:"https://www.niafix.com",
         github:"",
         header:"Niafix Website  Design",
@@ -16,7 +48,7 @@ export const data = [
         date:"20/09/2022",   
     },
     {
-        link:"company-website-ruddy.vercel.app",
+        link:"https://company-website-ruddy.vercel.app",
         github:"https://github.com/poyrazavsever/company-website",
         header: "Company Website",
         language:"React",
@@ -32,17 +64,17 @@ export const data = [
         date:"11/08/2022",   
     },
     {
-        link:"https://www.figma.com/file/S8AYMcm2Mr1NVORvY8P6sx/E-ticaret-Web-Site?type=design&node-id=0%3A1&t=XFldllY1tuJZtd8v-1",
-        github:"",
+        link:"https://e-commerce-website-five-phi.vercel.app/",
+        github:"https://github.com/poyrazavsever/E-commerce_Website",
         header:"Boutique Clothing Website",
-        language:"Figma",
+        language:"React",
         exp:"I designed an e-commerce website for an imaginary boutique clothing store.",
         date:"2/01/2023",   
     },
 
     {
         link:"https://github.com/poyrazavsever/Python-Flask-Blog_Project",
-        github:"",
+        github:"https://github.com/poyrazavsever/Python-Flask-Blog_Project",
         header:"Blog Website",
         language:"Python",
         exp:"Blog Website with Flask. However, it turned out a bit amateurish.",
