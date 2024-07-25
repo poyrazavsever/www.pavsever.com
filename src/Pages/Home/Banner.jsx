@@ -1,9 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactIcon from "../../Components/Icon"
+import {data as skillData} from "../../skillsData"
 function Banner() {
 
     const iconStyle = "text-lg text-zinc-500 hover:text-neutral-200 transition-all"
     const statboxStyle = "text-2xl text-zinc-300"
+    const API = "https://api.github.com/users/poyrazavsever"
+    
+    const [repo, setRepo] = useState("")
+    const [designs, setDesigns] = useState("")
+    const [useTech, setUseTech] = useState("")
+    const [bio, setBio] = useState("")
+
+
+    function getProfile() {
+
+        fetch(API)
+        .then((res) => res.json())
+        .then((data) => {
+            setRepo(data.public_repos)
+            setBio(data.bio)
+            setDesigns(data.location)
+            setUseTech(skillData.length)
+        }, (err) => {
+            console.log(err)
+        })
+
+    }
+
+    getProfile()
 
     return (
 
@@ -13,7 +38,7 @@ function Banner() {
 
                 <div>
                     <h2 className='text-lg md:text-xl font-medium text-neutral-300'>Poyraz Avsever</h2>
-                    <p className='text-neutral-500 pt-2 text-sm md:text-base'>Developer & Designer</p>
+                    <p className='text-neutral-500 pt-2 text-sm md:text-base'>{bio}</p>
 
                     <p className='flex flex-col items-start text-sm md:text-base text-neutral-500 gap-4 md:w-[450px] pt-3 leading-loose'>
                         I am Poyraz, I'm 18 years old. I have been interested in UI/UX design and frontend development for 1.5 years. I use React and Tailwind in frontend development. If you'd like to talk to me about something;
@@ -60,7 +85,7 @@ function Banner() {
                         <div className='flex flex-col justify-start items-start gap-3 z-30'>
                             <div><ReactIcon iconName={"AiOutlineCode"} iconType={"ai"} classname={statboxStyle} /></div>
                             <div><h2 className='text-xl font-medium text-zinc-300'>Projects</h2></div>
-                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>+15</span> Completed Project</p></div>
+                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>{repo}</span> Completed Project</p></div>
                         </div>
                         <div className='absolute bg-zinc-800 opacity-30 stroke-zinc-400 rounded-lg w-full h-full top-0 left-0 -z-30'></div>
                         <div className='bg-gradient-to-t from-red-500 to-violet-400 rounded-lg w-1/3 h-full opacity-20 blur-2xl absolute top-0 left-0 -z-30'></div>
@@ -70,7 +95,7 @@ function Banner() {
                         <div className='flex flex-col justify-start items-start gap-3 z-30'>
                             <div><ReactIcon iconName={"AiOutlineCode"} iconType={"ai"} classname={statboxStyle} /></div>
                             <div><h2 className='text-xl font-medium text-zinc-300'>Designs</h2></div>
-                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>+15</span> Completed Designs</p></div>
+                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>{designs}</span> Completed Designs</p></div>
                         </div>
                         <div className='absolute bg-zinc-800 opacity-30 stroke-zinc-400 rounded-lg w-full h-full top-0 left-0 -z-30'></div>
                         <div className='bg-gradient-to-t from-emerald-300 to-sky-400 rounded-lg w-1/3 h-full opacity-20 blur-2xl absolute top-0 left-0 -z-30'></div>
@@ -80,7 +105,7 @@ function Banner() {
                         <div className='flex flex-col justify-start items-start gap-3 z-30'>
                             <div><ReactIcon iconName={"AiOutlineCode"} iconType={"ai"} classname={statboxStyle} /></div>
                             <div><h2 className='text-xl font-medium text-zinc-300'>Used Technologies</h2></div>
-                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>+15</span> Experienced technology</p></div>
+                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>{useTech}</span> Experienced technology</p></div>
                         </div>
                         <div className='absolute bg-zinc-600 opacity-30 stroke-zinc-400 rounded-lg w-full h-full top-0 left-0 -z-30'></div>
                         <div className='bg-gradient-to-t from-yellow-300 to-red-100 rounded-lg w-1/3 h-full opacity-20 blur-2xl absolute top-0 left-0 -z-30'></div>
