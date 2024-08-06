@@ -32,7 +32,7 @@ export const data = [
         date:"24/02/2023",   
     },
     {
-        link:"https://www.niafix.com",
+        link:"https://www.figma.com/design/w7mBbH56gmg2R25YJMVZKl/Niafix?node-id=0-1&t=qi33LpNaQNoevNIr-1",
         github:"",
         header:"Niafix Website  Design",
         language:"Figma",
