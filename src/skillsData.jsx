@@ -114,16 +114,16 @@ export const data = [
     {
         link:"https://nodejs.org/en",
         skillName: "Node.js",
-        iconName:"FaNodeJs",
-        iconType:"fa",
+        iconName:"BiLogoNodejs ",
+        iconType:"bi",
         iconColor:"text-green-400",
     },  
     {
-        link:"https://nodejs.org/en",
+        link:"https://expressjs.com/",
         skillName: "Express.js",
-        iconName:"FaNodeJs",
-        iconType:"fa",
-        iconColor:"text-neutral-300",
+        iconName:"SiExpress",
+        iconType:"si",
+        iconColor:"text-neutral-100",
     },  
     
 ]
