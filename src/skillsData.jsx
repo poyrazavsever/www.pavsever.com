@@ -63,6 +63,13 @@ export const data = [
         iconColor:"text-neutral-200",
     },
     {
+        link:"https://www.python.org/",
+        skillName: "Python",
+        iconName:"SiPython",
+        iconType:"si",
+        iconColor:"text-neutral-300",
+    }, 
+    {
         link:"https://flask.palletsprojects.com/en/2.3.x/",
         skillName: "Flask",
         iconName:"SiFlask",
@@ -97,5 +104,26 @@ export const data = [
         iconType:"si",
         iconColor:"text-neutral-300",
     },   
+    {
+        link:"https://www.adobe.com/products/photoshop.html",
+        skillName: "Photoshop",
+        iconName:"SiAdobephotoshop",
+        iconType:"si",
+        iconColor:"text-sky-500",
+    },  
+    {
+        link:"https://nodejs.org/en",
+        skillName: "Node.js",
+        iconName:"FaNodeJs",
+        iconType:"fa",
+        iconColor:"text-green-400",
+    },  
+    {
+        link:"https://nodejs.org/en",
+        skillName: "Express.js",
+        iconName:"FaNodeJs",
+        iconType:"fa",
+        iconColor:"text-neutral-300",
+    },  
     
 ]
