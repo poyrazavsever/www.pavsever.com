@@ -33,12 +33,12 @@ function ProjectCard({ header, exp, date, link, github, language, }) {
 
                     <div className='text-xs md:text-sm text-neutral-400 flex items-center gap-3'>
                         <span>{date}</span>
-                        <a href={github} target='_blank' rel="noreferrer" className={classNames({
+                        <button href={github} target='_blank' rel="noreferrer" className={classNames({
                             "flex items-center gap-1 hover:text-neutral-300": true,
                             "hidden": github === ""
 
                         })}> <ReactIcon iconName={"AiFillGithub"}
-                            iconType={"ai"} /> Github</a>
+                            iconType={"ai"} /> Github</button>
                     </div>
                 </div>
 

@@ -1,8 +1,8 @@
 import React from "react";
 import * as Ionic5 from "react-icons/io5";
 import * as Ai from "react-icons/ai";
-import * as Bi from "react-icons/bi";
 import * as Ci from "react-icons/ci";
+import * as Di from "react-icons/di";
 import * as Si from "react-icons/si";
 import * as Fi from "react-icons/fi";
 
@@ -24,8 +24,8 @@ const ReactIcon = (props) => {
             case "ai":
                 icon = React.createElement(Ai[iconName]);
                 break;
-			case "bi":
-				icon = React.createElement(Bi[iconName]);
+			case "di":
+				icon = React.createElement(Di[iconName]);
 				break;
             case "si":
                 icon = React.createElement(Si[iconName]);

@@ -114,8 +114,8 @@ export const data = [
     {
         link:"https://nodejs.org/en",
         skillName: "Node.js",
-        iconName:"BiLogoNodejs ",
-        iconType:"bi",
+        iconName:"DiNodejsSmall",
+        iconType:"di",
         iconColor:"text-green-400",
     },  
     {
