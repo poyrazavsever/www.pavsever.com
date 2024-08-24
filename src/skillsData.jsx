@@ -130,7 +130,7 @@ export const data = [
         skillName: "Pug.js",
         iconName:"SiPug",
         iconType:"si",
-        iconColor:"text-brown-500",
+        iconColor:"text-stone-500",
     },
     
 ]
