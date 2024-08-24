@@ -124,6 +124,13 @@ export const data = [
         iconName:"SiExpress",
         iconType:"si",
         iconColor:"text-neutral-100",
-    },  
+    },
+    {
+        link:"https://expressjs.com/",
+        skillName: "Pug",
+        iconName:"SiPug",
+        iconType:"si",
+        iconColor:"text-brown-500",
+    },
     
 ]
