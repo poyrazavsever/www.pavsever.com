@@ -126,8 +126,8 @@ export const data = [
         iconColor:"text-neutral-100",
     },
     {
-        link:"https://expressjs.com/",
-        skillName: "Pug",
+        link:"https://pugjs.org/api/getting-started.html",
+        skillName: "Pug.js",
         iconName:"SiPug",
         iconType:"si",
         iconColor:"text-brown-500",
