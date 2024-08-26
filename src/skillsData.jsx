@@ -132,5 +132,11 @@ export const data = [
         iconType:"si",
         iconColor:"text-stone-500",
     },
-    
+       {
+        link:"https://www.mysql.com/",
+        skillName: "mysql",
+        iconName:"SiMysql",
+        iconType:"si",
+        iconColor:"text-yellow-500",
+    },
 ]
