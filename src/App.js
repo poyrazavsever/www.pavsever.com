@@ -1,7 +1,6 @@
 //Pages
 import Home from "./Pages/Home/Home";
 import Blog from "./Pages/Writing/Blog"
-import Post from "./Pages/Writing/Post"
 import NotFound from "./Components/NotFound"
 import AnimatedCursor from "react-animated-cursor"
 
@@ -53,7 +52,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/blog" element={<Blog />} /> 
-              <Route path="/post/:id" element={<Post/> }/>
               <Route path="/404" element={<NotFound/> }/>
             </Routes>
           </div>

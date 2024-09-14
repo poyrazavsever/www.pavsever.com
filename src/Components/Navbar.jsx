@@ -41,7 +41,7 @@ function Navbar() {
                 className={({ isActive }) => classNames({
                   "hover:text-neutral-400 transition-all": !isActive,
                   "text-neutral-300 cursor-normal cursor-default": isActive,
-                })}> Blog </NavLink>
+                })}> Medium </NavLink>
 
             </nav>
 
