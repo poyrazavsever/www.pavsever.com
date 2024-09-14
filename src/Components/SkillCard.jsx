@@ -13,7 +13,7 @@ function SkillCard({ link = "", iconName = "", iconType = "", iconColor = "", sk
       whileHover={{
         scale: 1.05,  // Kartı hafifçe büyüt
         borderColor: 'rgba(160, 160, 160, 0.6)', // Sınır rengini değiştir
-        transition: { duration: 0.4, ease: 'easeInOut' } // Animasyonun süresini ayarla
+        transition: { duration: 0.2, ease: 'easeIn' } // Animasyonun süresini ayarla
       }}
     >
       <ReactIcon iconName={iconName} iconType={iconType} iconColor={iconColor} classname="text-sm md:text-lg" />

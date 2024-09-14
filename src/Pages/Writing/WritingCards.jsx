@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import WritingCard from '../../Components/WritingCard';
+import { motion } from 'framer-motion'; // Framer Motion'ı import edin
 
 function WritingCards() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -70,43 +71,48 @@ function WritingCards() {
   const lastPostRef = useRef();
 
   return (
-    <>
-      <div className='md:container mx-auto'>
-        <div className='my-12 grid grid-cols-1 gap-4'>
-          {records?.length &&
-            records.map((post, index) => {
-              if (records.length === index + 1) {
-                // Son post olduğunda ref ekle
-                return (
-                  <div ref={lastPostRef} key={post.guid}>
-                    <WritingCard
-                      id={post.guid}
-                      title={post.title}
-                      content={post.content} // Kısa içerik
-                      date={post.pubDate}
-                      type='Medium'
-                    />
-                  </div>
-                );
-              } else {
-                return (
+    <div className='md:container mx-auto'>
+      <div className='my-12 grid grid-cols-1 gap-4'>
+        {records?.length &&
+          records.map((post, index) => {
+            const animationProps = {
+              initial: { opacity: 0, y: 20 },
+              animate: { opacity: 1, y: 0 },
+              transition: { duration: .6, delay: index * 0.3 }
+            };
+
+            if (records.length === index + 1) {
+              // Son post olduğunda ref ekle
+              return (
+                <motion.div ref={lastPostRef} key={post.guid} {...animationProps}>
                   <WritingCard
-                    key={post.guid}
                     id={post.guid}
                     title={post.title}
                     content={post.content} // Kısa içerik
                     date={post.pubDate}
                     type='Medium'
                   />
-                );
-              }
-            })
-          }
-        </div>
-        {loading && <p>Yükleniyor...</p>}
-        {!hasMore && <p>Daha fazla yazı yok.</p>}
+                </motion.div>
+              );
+            } else {
+              return (
+                <motion.div key={post.guid} {...animationProps}>
+                  <WritingCard
+                    id={post.guid}
+                    title={post.title}
+                    content={post.content} // Kısa içerik
+                    date={post.pubDate}
+                    type='Medium'
+                  />
+                </motion.div>
+              );
+            }
+          })
+        }
       </div>
-    </>
+      {loading && <p>Yükleniyor...</p>}
+      {!hasMore && <p>Daha fazla yazı yok.</p>}
+    </div>
   );
 }
 
