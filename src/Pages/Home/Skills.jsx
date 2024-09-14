@@ -3,7 +3,7 @@ import SkillCard from '../../Components/SkillCard'
 import { data } from "../../skillsData"
 function Skills() {
   return (
-    <div className='relative'>
+    <div className='relative mobile:pr-4'>
 
       <div>
         <h3 className='text-lg md:text-xl text-neutral-400 mb-3'>- Technologies I use</h3>

@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet";
 function Blog() {
   return (
 
-    <>
+    <div className='overflow-hidden'>
 
       <Helmet>
         <meta charSet="utf-8" />
@@ -94,7 +94,7 @@ function Blog() {
       </div>
 
 
-    </>
+    </div>
 
   )
 }

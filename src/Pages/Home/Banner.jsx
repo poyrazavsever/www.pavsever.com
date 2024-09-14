@@ -34,7 +34,7 @@ function Banner() {
 
     return (
 
-        <div className='flex flex-col gap-32 desktop:justify-between mobile:pl-10 mobile:pr-3 md:py-12'>
+        <div className='flex flex-col gap-32 desktop:justify-between mobile:pr-3 md:py-12'>
 
             <div className='flex desktop:justify-between items-center mobile:pl-10 mobile:pr-3'>
 

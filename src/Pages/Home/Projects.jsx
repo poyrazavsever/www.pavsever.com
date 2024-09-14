@@ -20,7 +20,7 @@ function Projects() {
   return (
     <div className='relative'>
 
-      <div className='md:container mx-auto z-40'>
+      <div className='md:container md:mx-auto z-40'>
 
         <div>
           <h3 className='text-lg md:text-xl text-neutral-400 mb-3'>- My Projects</h3>
