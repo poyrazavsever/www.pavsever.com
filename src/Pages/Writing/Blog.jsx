@@ -21,8 +21,8 @@ function Blog() {
           <div className='mobile:ml-12'>
 
             <div>
-              <h3 className='text-xl md:text-2xl text-neutral-300'>My Posts</h3>
-              <p className='text-sm md:text-base text-neutral-500 md:w-96 mt-2'>These are the writings that include my adventures, experiences, and my comments on current affairs.</p>
+              <h3 className='text-xl md:text-2xl text-neutral-300'>My Medium Articles</h3>
+              <p className='text-sm md:text-base text-neutral-500 md:w-96 mt-2'>My articles about design and technology on Medium.</p>
             </div>
 
           </div>
