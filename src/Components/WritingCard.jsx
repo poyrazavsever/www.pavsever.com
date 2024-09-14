@@ -7,9 +7,9 @@ import rehypeRaw from 'rehype-raw'
 
 function ProjectCard({ id, title, type, date, content }) {
     return (
-        <NavLink to={`/post/${id}`}>
+        <NavLink to={`/post/${id}`} >
 
-            <div className='group cursor-pointer w-11/12 border border-neutral-800 bg-neutral-950 rounded-lg animate-card !z-20'>
+            <div className='group w-11/12 border border-neutral-950 bg-opacity-20 bg-neutral-900 rounded-lg animate-card !z-20'>
 
                 <div className='py-4 px-6 flex flex-col items-start gap-3'>
 
