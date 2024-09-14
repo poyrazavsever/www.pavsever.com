@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import ReactIcon from "../../Components/Icon";
 import { data as skillData } from "../../skillsData";
 import { motion, useAnimation } from 'framer-motion';
+import {StatsCard} from "../../Components/StatsCard"
 
 function Banner() {
     const iconStyle = "text-lg text-zinc-500 hover:text-neutral-200 transition-all";
-    const statboxStyle = "text-2xl text-zinc-300";
     const API = "https://api.github.com/users/poyrazavsever";
 
     const [repo, setRepo] = useState("");
@@ -86,38 +86,10 @@ function Banner() {
                 </div>
             </div>
 
-            <div>
-                <div className='hidden md:flex flex-col md:flex-row justify-start items-center gap-8'>
-                    <div className='relative px-6 py-8'>
-                        <div className='flex flex-col justify-start items-start gap-3 z-30'>
-                            <div><ReactIcon iconName={"AiOutlineCode"} iconType={"ai"} classname={statboxStyle} /></div>
-                            <div><h2 className='text-xl font-medium text-zinc-300'>Projects</h2></div>
-                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>{repo}</span> Completed Project</p></div>
-                        </div>
-                        <div className='absolute bg-zinc-800 opacity-30 stroke-zinc-400 rounded-lg w-full h-full top-0 left-0 -z-30'></div>
-                        <div className='bg-gradient-to-t from-red-500 to-violet-400 rounded-lg w-1/3 h-full opacity-20 blur-2xl absolute top-0 left-0 -z-30'></div>
-                    </div>
-
-                    <div className='relative px-6 py-8'>
-                        <div className='flex flex-col justify-start items-start gap-3 z-30'>
-                            <div><ReactIcon iconName={"AiOutlineCode"} iconType={"ai"} classname={statboxStyle} /></div>
-                            <div><h2 className='text-xl font-medium text-zinc-300'>Designs</h2></div>
-                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>{designs}</span> Completed Designs</p></div>
-                        </div>
-                        <div className='absolute bg-zinc-800 opacity-30 stroke-zinc-400 rounded-lg w-full h-full top-0 left-0 -z-30'></div>
-                        <div className='bg-gradient-to-t from-emerald-300 to-sky-400 rounded-lg w-1/3 h-full opacity-20 blur-2xl absolute top-0 left-0 -z-30'></div>
-                    </div>
-
-                    <div className='relative px-6 py-8'>
-                        <div className='flex flex-col justify-start items-start gap-3 z-30'>
-                            <div><ReactIcon iconName={"AiOutlineCode"} iconType={"ai"} classname={statboxStyle} /></div>
-                            <div><h2 className='text-xl font-medium text-zinc-300'>Used Technologies</h2></div>
-                            <div><p className='text-base text-zinc-400 font-light'><span className='text-lg text-zinc-200 font-semibold'>{useTech}</span> Experienced technology</p></div>
-                        </div>
-                        <div className='absolute bg-zinc-600 opacity-30 stroke-zinc-400 rounded-lg w-full h-full top-0 left-0 -z-30'></div>
-                        <div className='bg-gradient-to-t from-yellow-300 to-red-100 rounded-lg w-1/3 h-full opacity-20 blur-2xl absolute top-0 left-0 -z-30'></div>
-                    </div>
-                </div>
+            <div className='hidden md:flex md:flex-row items-center justify-between gap-8'>
+                <StatsCard iconName="AiOutlineCode" title="Projects" value={repo} gradientColors="from-red-500 to-violet-400" />
+                <StatsCard iconName="AiOutlineAntDesign" title="Designs" value={designs} gradientColors="from-emerald-300 to-sky-400" />
+                <StatsCard iconName="AiFillSignal" title="Used Technologies" value={useTech} gradientColors="from-yellow-300 to-red-100" />
             </div>
 
             <div className='absolute group mr-28 -z-20'>
