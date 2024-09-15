@@ -5,6 +5,7 @@ import Home from "./Pages/Home/Home";
 import Blog from "./Pages/Writing/Blog"
 import Certificates from "./Pages/Certificates";
 import NotFound from "./Components/NotFound"
+import Equipment from "./Pages/Equipment";
 
 // Components
 import PreLoader from "./Components/PreLoader"
@@ -55,6 +56,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/blog" element={<Blog />} /> 
               <Route path="/certificates" element={<Certificates />} /> 
+              <Route path="/my-equipment" element={<Equipment />} /> 
               <Route path="/404" element={<NotFound/> }/>
             </Routes>
           </div>
