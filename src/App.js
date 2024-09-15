@@ -9,6 +9,7 @@ import Equipment from "./Pages/Equipment";
 import Bookmarks from "./Pages/Bookmarks";
 import UIWorks from "./Pages/UIWorks";
 import Resume from "./Pages/Resume";
+import TechStack from "./Pages/TechStack";
 
 // Components
 import PreLoader from "./Components/PreLoader"
@@ -63,6 +64,7 @@ function App() {
               <Route path="/bookmarks" element={<Bookmarks />} /> 
               <Route path="/uiworks" element={<UIWorks />} /> 
               <Route path="/resume" element={<Resume />} /> 
+              <Route path="/techstack" element={<TechStack />} /> 
               <Route path="/404" element={<NotFound/> }/>
             </Routes>
           </div>
