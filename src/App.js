@@ -8,6 +8,7 @@ import NotFound from "./Components/NotFound"
 import Equipment from "./Pages/Equipment";
 import Bookmarks from "./Pages/Bookmarks";
 import UIWorks from "./Pages/UIWorks";
+import Resume from "./Pages/Resume";
 
 // Components
 import PreLoader from "./Components/PreLoader"
@@ -61,6 +62,7 @@ function App() {
               <Route path="/my-equipment" element={<Equipment />} /> 
               <Route path="/bookmarks" element={<Bookmarks />} /> 
               <Route path="/uiworks" element={<UIWorks />} /> 
+              <Route path="/resume" element={<Resume />} /> 
               <Route path="/404" element={<NotFound/> }/>
             </Routes>
           </div>
