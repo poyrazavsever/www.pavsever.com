@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import CustomSlider from './CustomSlider';
 
@@ -16,7 +16,7 @@ function UIModal({ work, closeModal }) {
   return (
     <div className='fixed inset-0 bg-neutral-950 bg-opacity-80 border border-neutral-800 backdrop-blur-xl flex items-center justify-center z-50'>
       <motion.div
-        className='bg-neutral-900 rounded-lg p-4 w-10/12 h-5/6 relative'
+        className='bg-neutral-900 rounded-lg p-4 w-full max-w-4xl relative'
         variants={modalVariants}
         initial="hidden"
         animate="visible"
