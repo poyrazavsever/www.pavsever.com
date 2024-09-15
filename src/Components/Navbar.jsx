@@ -75,7 +75,7 @@ function Navbar() {
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiBookmark"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/uıworks">My UI Works</Link>
+                      <Link to="/uiworks">My UI Works</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiTool"} iconType={"fi"} classname='text-neutral-400' />
