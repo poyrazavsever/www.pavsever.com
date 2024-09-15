@@ -17,8 +17,8 @@ function InfoModal({ closeModal }) {
         animate="visible"
         exit="exit"
       >
-        <h2 className='text-xl font-semibold text-neutral-100 mb-4'>Özgeçmişim Henüz Eklenmedi</h2>
-        <p className='text-neutral-300 mb-4'>Bu bölümde özgeçmişimin PDF sürümünü ekleyeceğim. Şu anda bu belge mevcut değil, lütfen daha sonra tekrar kontrol edin.</p>
+        <h2 className='text-xl font-semibold text-neutral-100 mb-4'>Resume Not Yet Added</h2>
+        <p className='text-neutral-300 mb-4'>I will be adding the PDF version of my resume here. Currently, this document is not available, please check back later.</p>
         <button
           onClick={closeModal}
           className='absolute top-4 right-4 text-xs px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition-all'
@@ -29,7 +29,7 @@ function InfoModal({ closeModal }) {
           href="mailto:poyrazavsever@gmail.com"
           className='mt-4 block text-center px-4 py-2 bg-neutral-950 bg-opacity-80 border border-neutral-800 text-white rounded hover:bg-neutral-900 transition-all'
         >
-          Benimle İletişime Geçin
+          Contact Me
         </a>
       </motion.div>
     </div>

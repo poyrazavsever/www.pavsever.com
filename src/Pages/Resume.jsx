@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
-import InfoModal from "../Components/InfoModal"
+import { useNavigate } from 'react-router-dom';
+import InfoModal from "../Components/InfoModal";
 
 function Resume() {
   const [isModalOpen, setModalOpen] = useState(true);
+  const navigate = useNavigate();
 
   const closeModal = () => {
     setModalOpen(false);
-    window.location.href = '/'; // Ana sayfaya yönlendirme
+    navigate('/'); // Ana sayfaya yönlendirme
   };
 
   return (
