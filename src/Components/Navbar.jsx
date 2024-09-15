@@ -74,6 +74,10 @@ function Navbar() {
                       <Link to="/certificates">Certificates</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
+                      <ReactIcon iconName={"FiBookmark"} iconType={"fi"} classname='text-neutral-400' />
+                      <Link to="/bookmarks">My UI Works</Link>
+                    </li>
+                    <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiTool"} iconType={"fi"} classname='text-neutral-400' />
                       <Link to="/my-equipment">My Equipment</Link>
                     </li>
