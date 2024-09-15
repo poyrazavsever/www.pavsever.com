@@ -1,8 +1,10 @@
+import AnimatedCursor from "react-animated-cursor"
+
 //Pages
 import Home from "./Pages/Home/Home";
 import Blog from "./Pages/Writing/Blog"
+import Certificates from "./Pages/Certificates";
 import NotFound from "./Components/NotFound"
-import AnimatedCursor from "react-animated-cursor"
 
 // Components
 import PreLoader from "./Components/PreLoader"
@@ -52,6 +54,7 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/blog" element={<Blog />} /> 
+              <Route path="/certificates" element={<Certificates />} /> 
               <Route path="/404" element={<NotFound/> }/>
             </Routes>
           </div>

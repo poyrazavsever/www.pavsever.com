@@ -66,9 +66,13 @@ function Navbar() {
                   initial={false}
                   animate={isOpen ? "open" : "closed"}
                   variants={dropdownVariants}
-                  className='absolute top-10 left-0 mt-2 w-40 bg-neutral-800 rounded-lg shadow-lg overflow-hidden'
+                  className='absolute top-10 left-0 mt-2 w-40 bg-neutral-900 border border-neutral-800 z-50 rounded-lg shadow-lg overflow-hidden'
                 >
                   <ul className='text-sm text-neutral-400'>
+                    <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
+                      <ReactIcon iconName={"FiAward"} iconType={"fi"} classname='text-neutral-400' />
+                      <Link to="/certificates">Certificates</Link>
+                    </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiTool"} iconType={"fi"} classname='text-neutral-400' />
                       <Link to="/my-equipment">My Equipment</Link>
@@ -78,11 +82,24 @@ function Navbar() {
                       <Link to="/bookmarks">Bookmarks</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
-                      <ReactIcon iconName={"AiOutlineUser"} iconType={"ai"} classname='text-neutral-400' />
-                      <Link to="/ataturk">Atatürk</Link>
+                      <ReactIcon iconName={"FiFileText"} iconType={"fi"} classname='text-neutral-400' />
+                      <Link to="/resume">Resume</Link>
+                    </li>
+                    <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
+                      <ReactIcon iconName={"FiCode"} iconType={"fi"} classname='text-neutral-400' />
+                      <Link to="/techstack">Tech Stack</Link>
+                    </li>
+                    <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
+                      <ReactIcon iconName={"FiThumbsUp"} iconType={"fi"} classname='text-neutral-400' />
+                      <Link to="/testimonials">Testimonials</Link>
+                    </li>
+                    <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
+                      <ReactIcon iconName={"FiRefreshCcw"} iconType={"fi"} classname='text-neutral-400' />
+                      <Link to="/changelog">Changelog</Link>
                     </li>
                   </ul>
                 </motion.div>
+
               </div>
             </nav>
 
