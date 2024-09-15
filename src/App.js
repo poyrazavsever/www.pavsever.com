@@ -6,7 +6,7 @@ import Blog from "./Pages/Writing/Blog"
 import Certificates from "./Pages/Certificates";
 import NotFound from "./Components/NotFound"
 import Equipment from "./Pages/Equipment";
-
+import Bookmarks from "./Pages/Bookmarks";
 // Components
 import PreLoader from "./Components/PreLoader"
 import Navbar from "./Components/Navbar";
@@ -57,6 +57,7 @@ function App() {
               <Route path="/blog" element={<Blog />} /> 
               <Route path="/certificates" element={<Certificates />} /> 
               <Route path="/my-equipment" element={<Equipment />} /> 
+              <Route path="/bookmarks" element={<Bookmarks />} /> 
               <Route path="/404" element={<NotFound/> }/>
             </Routes>
           </div>
