@@ -11,8 +11,8 @@ import UIWorks from "./Pages/UIWorks";
 import Resume from "./Pages/Resume";
 import TechStack from "./Pages/TechStack";
 import Testimonials from "./Pages/Testimonials";
-import Login from "./Pages/Login"; // Login sayfası
-import AdminPanel from "./Pages/AdminPanel"; // Admin Paneli
+import Login from "./Pages/Admin/Login"; // Login sayfası
+import AdminPanel from "./Pages/Admin/AdminPanel"; // Admin Paneli
 
 // Components
 import PreLoader from "./Components/PreLoader";

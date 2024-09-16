@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import Sidebar from '../../Components/Sidebar';
 
+// Tabs 
+import ProjectCreation from './ProjectCreation';
+
 const AdminPanel = () => {
   const [activeTab, setActiveTab] = useState('Proje Ekle'); // Başlangıçta aktif olan tab
 
@@ -12,8 +15,8 @@ const AdminPanel = () => {
           {activeTab}
         </h1>
         {/* Aktif olan tab'a göre içerik değişecek */}
-        <div className="bg-neutral-800 p-4 rounded">
-          {activeTab === 'Proje Ekle' && <p>Proje Ekleme Alanı</p>}
+        <div>
+          {activeTab === 'Proje Ekle' && <p><ProjectCreation /></p>}
           {activeTab === 'Teknoloji Ekle' && <p>Teknoloji Ekleme Alanı</p>}
           {activeTab === 'Sertifika Ekle' && <p>Sertifika Ekleme Alanı</p>}
           {activeTab === 'UI Çalışması Ekle' && <p>UI Çalışması Ekleme Alanı</p>}
