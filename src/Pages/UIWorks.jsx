@@ -7,12 +7,35 @@ import UIModal from "../Components/UIModal"
 const uiWorks = [
   {
     id: 1,
-    title: 'UI Design 1',
+    title: 'NFT Shop',
     images: [
       '/uiworks/uiwork1-1.png',
       '/uiworks/uiwork1-2.png',
+      '/uiworks/uiwork1-3.png',
+      '/uiworks/uiwork1-4.png',
     ],
   },
+  {
+    id: 2,
+    title: '3D Works',
+    images: [
+      '/uiworks/uiwork2-1.png',
+      '/uiworks/uiwork2-2.png',
+      '/uiworks/uiwork2-3.png',
+    ],
+  },
+  {
+    id: 3,
+    title: 'Tech Company Website',
+    images: [
+      '/uiworks/uiwork3-1.png',
+      '/uiworks/uiwork3-2.png',
+      '/uiworks/uiwork3-3.png',
+      '/uiworks/uiwork3-4.png',
+      '/uiworks/uiwork3-5.png',
+    ],
+  },
+
 
 ];
 

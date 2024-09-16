@@ -9,7 +9,7 @@ const modalVariants = {
 };
 
 function UIModal({ work, closeModal }) {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1);
 
   if (!work) return null;
 
