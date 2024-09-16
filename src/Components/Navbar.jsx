@@ -97,10 +97,6 @@ function Navbar() {
                       <ReactIcon iconName={"FiThumbsUp"} iconType={"fi"} classname='text-neutral-400' />
                       <Link to="/testimonials">Testimonials</Link>
                     </li>
-                    <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
-                      <ReactIcon iconName={"FiRefreshCcw"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/changelog">Changelog</Link>
-                    </li>
                   </ul>
                 </motion.div>
 
