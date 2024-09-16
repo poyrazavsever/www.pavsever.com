@@ -1,24 +1,21 @@
-// src/firebase.js
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
-import { getAuth } from 'firebase/auth';
+// firebase.js
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getAnalytics } from "firebase/analytics";
 
-// Firebase config
+// Firebase yapılandırma bilgileri
 const firebaseConfig = {
-  apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-  authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-  projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyCu_cDiycIlSoapRsIfqsTWr4q86eu0eqs",
+  authDomain: "my-portflio-42245.firebaseapp.com",
+  projectId: "my-portflio-42245",
+  storageBucket: "my-portflio-42245.appspot.com",
+  messagingSenderId: "966736992998",
+  appId: "1:966736992998:web:98b548a53265e6257f7927",
+  measurementId: "G-TJBKHZLR7J"
 };
-
-// Initialize Firebase
+// Firebase'i başlat
 const app = initializeApp(firebaseConfig);
-
-// Firebase services
-const db = getFirestore(app);
 const auth = getAuth(app);
+const analytics = getAnalytics(app);
 
-export { db, auth };
+export { app, auth, analytics };
