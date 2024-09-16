@@ -6,6 +6,7 @@ import ProjectCreation from './ProjectCreation';
 import TechCreation from './TechCreation';
 import CertificateCreation from './CertificateCreation';
 import UICreation from './UICreation';
+import EquipmentCreation from './EquipmentCreation';
 
 const AdminPanel = () => {
   const [activeTab, setActiveTab] = useState('Proje Ekle'); // Başlangıçta aktif olan tab
@@ -23,7 +24,7 @@ const AdminPanel = () => {
           {activeTab === 'Teknoloji Ekle' && <TechCreation />}
           {activeTab === 'Sertifika Ekle' && <CertificateCreation/> }
           {activeTab === 'UI Çalışması Ekle' && <UICreation />}
-          {activeTab === 'Ekipman Ekle' && ""}
+          {activeTab === 'Ekipman Ekle' && <EquipmentCreation />}
           {activeTab === 'Bookmark Ekle' && ""}
           {activeTab === 'CV Ekle' && ""}
           {activeTab === 'Yorum Ekle' && ""}
