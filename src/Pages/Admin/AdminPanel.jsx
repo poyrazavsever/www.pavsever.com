@@ -9,6 +9,7 @@ import UICreation from './UICreation';
 import EquipmentCreation from './EquipmentCreation';
 import BookmarkCreation from './BookmarkCreation';
 import CVCreation from './CVCreation';
+import CommentCreation from './CommentCreation';
 
 const AdminPanel = () => {
   const [activeTab, setActiveTab] = useState('Proje Ekle'); // Başlangıçta aktif olan tab
@@ -29,7 +30,7 @@ const AdminPanel = () => {
           {activeTab === 'Ekipman Ekle' && <EquipmentCreation />}
           {activeTab === 'Bookmark Ekle' && <BookmarkCreation />}
           {activeTab === 'CV Ekle' && <CVCreation />}
-          {activeTab === 'Yorum Ekle' && ""}
+          {activeTab === 'Yorum Ekle' && <CommentCreation />}
         </div>
       </div>
     </div>
