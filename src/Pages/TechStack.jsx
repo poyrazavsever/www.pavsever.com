@@ -14,7 +14,7 @@ const TechStack = () => {
             className='flex flex-col items-start p-4 bg-neutral-900 bg-opacity-30 border border-neutral-800 rounded-lg shadow-md hover:bg-neutral-700 transition-all'
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.2, duration: 0.3 }}
+            transition={{ delay: index * 0.2, duration: 0.1 }}
           >
             <a 
               href={tech.link} 
