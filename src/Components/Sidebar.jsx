@@ -13,8 +13,8 @@ const Sidebar = ({ activeTab, setActiveTab }) => {
   ];
 
   return (
-    <div className="w-64 h-screen bg-neutral-900 text-white p-4">
-      <h2 className="text-2xl font-bold mb-6">Admin Panel</h2>
+    <div className="w-64 h-fit bg-neutral-950 text-white p-4 mt-12 rounded-lg bg-opacity-30 border border-neutral-800">
+      <h2 className="text-2xl font-bold mb-6">Hoş geldin</h2>
       <ul className="space-y-4">
         {tabs.map((tab) => (
           <li key={tab}>
