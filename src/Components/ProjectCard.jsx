@@ -44,11 +44,12 @@ function ProjectCard({ header, exp, date, link, github, language }) {
                             "from-cyan-300 to-blue-600": language === "React",
                             "from-sky-400 to-yellow-600": language === "Python",
                             "from-red-400 from-10% via-purple-500 via-30% to-emerald-500 to-90%": language === "Figma",
-                            "from-blue-500 to-blue-600": language === "Next.js",
+                            "from-white to-neutral-600": language === "Next.js",
                             "from-blue-800 to-blue-400": language === "TypeScript",
                             "from-purple-500 to-blue-800": language === "C#",
                             "from-green-400 to-green-600": language === "Vue",
                             "from-pink-400 to-orange-600": language === "Nest.js",
+                            "from-neutral-500 to-gray-900": language === "Express.js",
                             "from-yellow-500 to-red-500": language === "JavaScript",
                         })}></div>
                         <span className='text-neutral-400 text-xs md:text-sm'>{language}</span>
