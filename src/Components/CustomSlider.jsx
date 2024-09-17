@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 
 const sliderVariants = {
@@ -9,6 +9,11 @@ const sliderVariants = {
 
 function CustomSlider({ images, currentIndex, setCurrentIndex }) {
   const controls = useAnimation();
+
+  // Modal açıldığında "enter" animasyonunu başlat
+  useEffect(() => {
+    controls.start("enter");
+  }, [controls]);
 
   const handleNext = () => {
     controls.start("exit").then(() => {
@@ -28,7 +33,7 @@ function CustomSlider({ images, currentIndex, setCurrentIndex }) {
     <div className='relative w-full h-full'>
       <button
         onClick={handlePrev}
-        className='absolute left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-neutral-800 border border-neutral-500 text-white p-2 flex items-center justify-center rounded-full'
+        className='absolute left-4 top-1/2 z-20 transform -translate-y-1/2 w-8 h-8 bg-neutral-800 border border-neutral-500 text-white p-2 flex items-center justify-center rounded-full'
       >
         &lt;
       </button>
