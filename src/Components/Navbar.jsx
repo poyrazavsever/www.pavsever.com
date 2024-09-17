@@ -32,7 +32,7 @@ function Navbar() {
   return (
     <div className='pt-12'>
       <div className='mobile:flex justify-center items-center'>
-        <div className='h-15 md:w-[500px] pl-1 mobile:px-4 py-2 border border-neutral-800 rounded-full'>
+        <div className='h-15 md:w-[500px] pl-1 mobile:px-4 py-2 bg-neutral-950 bg-opacity-30 border border-neutral-800 shadow-lg rounded-full'>
           <div className='flex items-center justify-around gap-4'>
             <Link to="/" className='mobile:hidden'>
               <img src={process.env.PUBLIC_URL + "/Images/Other/profile.jpg"} alt="profilep" className='w-10 h-10 md:w-12 md:h-12 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-300' />
@@ -48,7 +48,7 @@ function Navbar() {
                   "text-neutral-300 cursor-default": isActive,
                 })}> Home </NavLink>
 
-              <NavLink to="/blog"
+              <NavLink to="/medium"
                 end
                 className={({ isActive }) => classNames({
                   "hover:text-neutral-400 transition-all": !isActive,
@@ -71,31 +71,31 @@ function Navbar() {
                   <ul className='text-sm text-neutral-400'>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiAward"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/certificates">Certificates</Link>
+                      <Link to="/certificates" onClick={() => setIsOpen(false)}>Certificates</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiBookmark"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/uiworks">My UI Works</Link>
+                      <Link to="/uiworks" onClick={() => setIsOpen(false)}>My UI Works</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiTool"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/my-equipment">My Equipment</Link>
+                      <Link to="/my-equipment" onClick={() => setIsOpen(false)}>My Equipment</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiBookmark"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/bookmarks">Bookmarks</Link>
+                      <Link to="/bookmarks" onClick={() => setIsOpen(false)}>Bookmarks</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiFileText"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/resume">Resume</Link>
+                      <Link to="/resume" onClick={() => setIsOpen(false)}>Resume</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiCode"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/techstack">Tech Stack</Link>
+                      <Link to="/techstack" onClick={() => setIsOpen(false)}>Tech Stack</Link>
                     </li>
                     <li className='hover:bg-neutral-700 p-2 transition-all flex items-center gap-2'>
                       <ReactIcon iconName={"FiThumbsUp"} iconType={"fi"} classname='text-neutral-400' />
-                      <Link to="/testimonials">Testimonials</Link>
+                      <Link to="/testimonials" onClick={() => setIsOpen(false)}>Testimonials</Link>
                     </li>
                   </ul>
                 </motion.div>

@@ -58,7 +58,7 @@ function App() {
           <div>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/blog" element={<Blog />} />
+              <Route path="/medium" element={<Blog />} />
               <Route path="/certificates" element={<Certificates />} />
               <Route path="/my-equipment" element={<Equipment />} />
               <Route path="/bookmarks" element={<Bookmarks />} />
