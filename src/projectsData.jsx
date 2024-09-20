@@ -24,7 +24,7 @@ export const data = [
         date: "08/29/2024",
     },
     {
-        link: "https://readme-maker-rho.vercel.app/",
+        link: "https://readme-maker-eight.vercel.app/",
         github: "https://github.com/poyrazavsever/readme-maker",
         header: "Readme Maker",
         language: "Next.js",
