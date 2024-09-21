@@ -37,6 +37,17 @@ const uiWorks = [
       '/uiworks/uiwork3-5.png',
     ],
   },
+  {
+    id: 3,
+    title: 'Flower Web site',
+    images: [
+      '/uiworks/uiwork4-1.png',
+      '/uiworks/uiwork4-2.png',
+      '/uiworks/uiwork4-3.png',
+      '/uiworks/uiwork4-4.png',
+      '/uiworks/uiwork4-5.png',
+    ],
+  },
 
 
 ];
