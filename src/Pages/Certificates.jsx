@@ -69,7 +69,14 @@ function Certificates() {
       date: '05.05.2023'
     },
     {
-      id: 5,
+      id: 7,
+      title: "Yeşilay Münazara Türkiye Şampiyonası Katılım Belgesi",
+      img: '/certificates/cert8.jpg',
+      description: 'Yeşilay Münazara Türkiye Şampiyonası Katılım Belgesi',
+      date: '05.07.2023'
+    },
+    {
+      id: 8,
       title: "(40+ Saat) Python | Sıfırdan İleri Seviye Programlama (2020)",
       img: '/certificates/cert6.jpg',
       description: 'Yeşilay Münazara Bölge Şampiyonası Katılım Belgesi',
