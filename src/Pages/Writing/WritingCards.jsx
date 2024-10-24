@@ -1,6 +1,6 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import WritingCard from '../../Components/WritingCard';
-import { motion } from 'framer-motion'; // Framer Motion'ı import edin
+import { motion } from 'framer-motion';
 
 function WritingCards() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -9,6 +9,7 @@ function WritingCards() {
   const [loading, setLoading] = useState(true);
   const [hasMore, setHasMore] = useState(true);
   const observer = useRef();
+  const lastPostRef = useRef();
 
   // Medium RSS Feed'den yazıları çek
   useEffect(() => {
@@ -43,15 +44,9 @@ function WritingCards() {
   const records = posts.slice(0, lastIndex); // Şu ana kadar yüklenmiş yazıları getir
 
   // IntersectionObserver callback fonksiyonu
-  useEffect(() => {
-    if (loading) return;
-    if (!hasMore) return; // Yüklenebilecek daha fazla yazı yoksa
-
-    if (observer.current) observer.current.disconnect();
-
-    const callback = (entries) => {
-      if (entries[0].isIntersecting) {
-        // Son yazı görüldüğünde bir sonraki sayfayı yükle
+  const observerCallback = useCallback(
+    (entries) => {
+      if (entries[0].isIntersecting && hasMore) {
         setCurrentPage((prevPage) => {
           if (prevPage * recordsPerPage >= posts.length) {
             setHasMore(false); // Eğer tüm yazılar yüklendiyse hasMore'u false yap
@@ -61,14 +56,18 @@ function WritingCards() {
           }
         });
       }
-    };
+    },
+    [hasMore, posts.length, recordsPerPage]
+  );
 
-    observer.current = new IntersectionObserver(callback);
+  // Son post'u gözlemlemek için IntersectionObserver'ı kur
+  useEffect(() => {
+    if (loading) return;
+    if (observer.current) observer.current.disconnect();
+
+    observer.current = new IntersectionObserver(observerCallback);
     if (lastPostRef.current) observer.current.observe(lastPostRef.current);
-  }, [loading, hasMore, posts]);
-
-  // Son öğeyi takip et
-  const lastPostRef = useRef();
+  }, [loading, observerCallback]);
 
   return (
     <div className='md:container mx-auto'>
@@ -78,7 +77,7 @@ function WritingCards() {
             const animationProps = {
               initial: { opacity: 0, y: 20 },
               animate: { opacity: 1, y: 0 },
-              transition: { duration: .6, delay: index * 0.3 }
+              transition: { duration: 0.6, delay: index * 0.3 }
             };
 
             if (records.length === index + 1) {
@@ -111,7 +110,7 @@ function WritingCards() {
         }
       </div>
       {loading && <p>Yükleniyor...</p>}
-      {!hasMore && <p>Daha fazla yazı yok.</p>}
+      {!hasMore && !loading && <p>Daha fazla yazı yok.</p>}
     </div>
   );
 }
