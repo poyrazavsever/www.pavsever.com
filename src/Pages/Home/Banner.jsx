@@ -54,7 +54,7 @@ function Banner() {
                     <p className='text-neutral-500 pt-2 text-sm md:text-base'>{bio}</p>
 
                     <p className='flex flex-col items-start text-sm md:text-base text-neutral-500 gap-4 md:w-[450px] pt-3 leading-loose'>
-                        I am Poyraz, I'm 18 years old. I have been interested in UI/UX design and frontend development for 2.5 years. I use React and Tailwind in frontend development. If you'd like to talk to me about something;
+                        I am Poyraz. I have been interested in UI/UX design and software development. I use React and Tailwind in frontend development. If you'd like to talk to me about something;
                     </p>
 
                     <button className='flex items-center gap-1 text-neutral-400 text-base md:text-lg hover:gap-2 transition-all pt-4'>
