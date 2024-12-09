@@ -20,7 +20,7 @@ const Testimonials = () => {
     {
       id: 2,
       name: 'Halil İbrahim Sabo',
-      message: 'Poyraz çok başarılı ve çalışkan bir kardeşim. Çok dürüst ve şeffaf bir yaklaşımı var. İşlerinde her zaman netlik ve profesyonellik sunuyor.',
+      message: 'Poyraz çok başarılı ve çalışkan bir kardeşim. Çok dürüst ve şeffaf bir yaklaşımı var. Poyraz’ın başarılarının devamını görmekten mutluluk duyuyorum.',
       stars: 5,
       time: '2024',
       image: 'user2.jpg',
