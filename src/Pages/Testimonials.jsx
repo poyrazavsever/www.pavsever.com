@@ -13,7 +13,7 @@ const Testimonials = () => {
       name: 'ysfszgn',
       message: 'Çok kaliteli, başarılı bir çalışma geldi elime, teşekkürler.',
       stars: 4.8,
-      time: '2 years ago',
+      time: '2022',
       image: 'user1.jpg',
     },
     {
@@ -31,7 +31,7 @@ const Testimonials = () => {
       message: 'Teşekkür ediyorum kaliteli bir iş gerçekleşti.',
       stars: 5,
       time: '2024',
-      image: null,
+      image: 'https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg',
     },
   ];
 
