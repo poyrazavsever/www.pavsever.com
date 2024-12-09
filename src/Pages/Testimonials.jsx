@@ -15,6 +15,7 @@ const Testimonials = () => {
       stars: 4.8,
       time: '2022',
       image: 'user1.jpg',
+      link: 'https://bionluk.com/poyrazavsever',
     },
     {
       id: 2,
@@ -32,6 +33,7 @@ const Testimonials = () => {
       stars: 5,
       time: '2024',
       image: 'https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg',
+      link: 'https://bionluk.com/poyrazavsever',
     },
   ];
 
@@ -67,7 +69,7 @@ const Testimonials = () => {
                     href={testimonial.link}
                     target='_blank'
                     rel='noopener noreferrer'
-                    className='underline hover:text-yellow-400'
+                    className='underline hover:text-yellow-400 transition-all'
                   >
                     {testimonial.name}
                   </a>
