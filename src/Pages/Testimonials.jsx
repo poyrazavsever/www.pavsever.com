@@ -10,12 +10,12 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'ysfszgn',
-      message: 'Çok kaliteli, başarılı bir çalışma geldi elime, teşekkürler.',
-      stars: 4.8,
-      time: '2022',
-      image: 'user1.jpg',
-      link: 'https://bionluk.com/poyrazavsever',
+      name: 'Ali Korkmaz',
+      message: 'Tam istediğim gibi bir site oldu. Düşünemediklerimi de düşünmesi ve her şeyi şeffaf bir şekilde açıklaması çalışmanın beklediğimden daha da iyi olmasını sağladı. Her şey için çok teşekkür ederim.',
+      stars: 5,
+      time: '2025',
+      image: 'user3.jpg',
+      link: '',
     },
     {
       id: 2,
@@ -27,12 +27,21 @@ const Testimonials = () => {
       link: 'https://www.linkedin.com/in/halil-ibrahim-sabo-18a03a251/',
     },
     {
-      id: 3,
+      id:3,
       name: 'myyhsky5345',
       message: 'Teşekkür ediyorum kaliteli bir iş gerçekleşti.',
       stars: 5,
       time: '2024',
-      image: 'https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg',
+      image: 'Default.jpg',
+      link: 'https://bionluk.com/poyrazavsever',
+    },
+    {
+      id: 4,
+      name: 'ysfszgn',
+      message: 'Çok kaliteli, başarılı bir çalışma geldi elime, teşekkürler.',
+      stars: 4.8,
+      time: '2022',
+      image: 'user1.jpg',
       link: 'https://bionluk.com/poyrazavsever',
     },
   ];
