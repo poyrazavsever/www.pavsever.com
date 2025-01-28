@@ -32,12 +32,24 @@ function WritingCards() {
     fetchMediumPosts();
   }, []);
 
+  // Framer Motion animasyon ayarları
+  const animationVariants = {
+    hidden: { opacity: 0, y: 20 }, // Başlangıç durumu (opacity 0, aşağıda)
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }, // Görünür duruma geçiş
+  };
+
   return (
     <div className='md:container mx-auto'>
       <div className='my-12 grid grid-cols-1 gap-4'>
         {posts?.length &&
           posts.map((post) => (
-            <motion.div key={post.guid}>
+            <motion.div
+              key={post.guid}
+              initial="hidden" // İlk yüklenme animasyonunun başlangıcı
+              animate="visible" // Yüklendiğinde animasyon
+              exit="hidden" // Çıkış animasyonu (opsiyonel)
+              variants={animationVariants} // Yukarıdaki animasyon detaylarını kullan
+            >
               <WritingCard
                 id={post.guid}
                 title={post.title}
