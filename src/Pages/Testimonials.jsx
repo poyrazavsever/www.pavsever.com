@@ -14,7 +14,7 @@ const Testimonials = () => {
       message: 'Tam istediğim gibi bir site oldu. Düşünemediklerimi de düşünmesi ve her şeyi şeffaf bir şekilde açıklaması çalışmanın beklediğimden daha da iyi olmasını sağladı. Her şey için çok teşekkür ederim.',
       stars: 5,
       time: '2025',
-      image: 'user3.jpg',
+      image: 'user4.jpg',
       link: '',
     },
     {
