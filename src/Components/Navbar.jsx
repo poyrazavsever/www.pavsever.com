@@ -35,7 +35,7 @@ function Navbar() {
         <div className='h-15 md:w-[500px] pl-1 mobile:px-4 py-2 bg-neutral-950 bg-opacity-30 border border-neutral-800 shadow-lg rounded-full'>
           <div className='flex items-center justify-around gap-4'>
             <Link to="/" className='mobile:hidden'>
-              <img src={process.env.PUBLIC_URL + "/Images/Other/profile.jpg"} alt="profilep" className='w-10 h-10 md:w-12 md:h-12 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-300' />
+              <img src={process.env.PUBLIC_URL + "/Images/Other/poyraz.jpeg"} alt="profilep" className='w-10 h-10 md:w-12 md:h-12 rounded-full object-cover grayscale hover:grayscale-0 transition-all duration-300' />
             </Link>
 
             <div className={`${ara} mobile:hidden`}></div>
